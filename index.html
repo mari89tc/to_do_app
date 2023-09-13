@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>To do app</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Poppins:wght@500&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet" />
+  </head>
+  <body>
+    <h2>To Do List</h2>
+    <section>
+      <h3>skal købes</h3>
+      <div id="showTem">
+        <!-- her kommer anden template -->
+      </div>
+      <h3>den er købt</h3>
+      <div id="doneTem">
+        <!-- her kommer done template -->
+      </div>
+      <template id="temOutput">
+        <div id="outputAll">
+          <input id="check" type="checkbox" />
+          <p id="numfield"></p>
+          <p id="textfield"></p>
+          <div><img id="removeItem" src="remove.svg" alt="remove cross" /></div>
+        </div>
+      </template>
+
+      <form class="forms" name="todo">
+        <div>
+          <label for="number">Antal:</label>
+          <input id="number" type="text" />
+        </div>
+        <div>
+          <label for="title">Påmindelse:</label>
+          <input id="title" name="title" type="text" required />
+        </div>
+        <button id="addBut" type="submit">Tilføj</button>
+      </form>
+    </section>
+    <script src="script.js"></script>
+  </body>
+</html>

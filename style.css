@@ -1,0 +1,122 @@
+/* font-family: 'Poppins', sans-serif;
+h2 font-size: 60px;
+h3 font-size: 30px;
+p font-size: 20px;
+lyserød background-color: #F5CBDE;
+rød background-color: #EB6141;
+color: black;
+text-decoration: line-through;
+*/
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f5cbde;
+  display: grid;
+}
+h2 {
+  font-family: "Poppins", sans-serif;
+  font-size: 60px;
+  color: black;
+  text-transform: uppercase;
+  justify-self: center;
+  align-self: center;
+}
+h3 {
+  font-family: "Poppins", sans-serif;
+  font-size: 30px;
+  color: black;
+  text-transform: uppercase;
+  margin-left: 200px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+#outputAll {
+  font-family: "Poppins", sans-serif;
+  font-size: 18px;
+  color: black;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 2fr;
+  width: 1200px;
+  margin: 10px;
+}
+#textfield,
+#numfield,
+#check,
+#removeItem {
+  padding: 5px;
+}
+#removeItem {
+  justify-self: flex-end;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+#showTem {
+  background-color: #eb6141;
+  border: solid 2px #eb6141;
+}
+#doneTem {
+  background-color: #f5cbde;
+  border: solid 2px #eb6141;
+  text-decoration: 2px black line-through;
+}
+#check {
+  width: 400px;
+}
+
+.forms {
+  background-color: black;
+  display: grid;
+  grid-template-columns: 2fr 2fr 1fr;
+  position: absolute;
+  bottom: 0px;
+  align-items: center;
+  justify-items: center;
+  min-width: 1500px;
+}
+label {
+  font-family: "Poppins", sans-serif;
+  font-size: 18px;
+  color: #f5cbde;
+  text-transform: uppercase;
+}
+input {
+  width: 400px;
+  margin: 10px;
+  padding: 15px;
+  background-color: black;
+  text-decoration: none;
+  font-family: "Poppins", sans-serif;
+  font-size: 18px;
+  color: #f5cbde;
+  border: none;
+  border-bottom: 2px solid #eb6141;
+  text-transform: uppercase;
+}
+input:focus {
+  background-color: black;
+  text-decoration: none;
+  border: none;
+}
+
+#addBut {
+  font-family: "Poppins", sans-serif;
+  font-size: 18px;
+  color: #f5cbde;
+  background-color: black;
+  width: 250px;
+  border: solid 2px black;
+  cursor: pointer;
+}
+#addBut:hover {
+  color: black;
+  padding: 15px;
+  background-color: #eb6141;
+  border: solid 2px black;
+  text-decoration: underline;
+}
